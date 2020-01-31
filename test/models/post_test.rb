@@ -3,7 +3,7 @@ require 'test_helper'
 class PostTest < ActiveSupport::TestCase
   def setup
     @user = User.new(name: 'fossegrim')
-    @post = @user.post.new(link: 'http://fossegr.im')
+    @post = @user.posts.new(link: 'http://fossegr.im')
   end
 
   test 'should be valid' do
